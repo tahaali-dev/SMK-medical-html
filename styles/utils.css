@@ -1,0 +1,153 @@
+/* Z-index utilities. (done)
+Border radius and width utilities.(done)
+Shadow utilities for box and text.(done)
+Overflow, position, and display utilities.(done)
+Width, height, and max/min utilities.(done)
+*/
+
+/* Borders */
+.border {
+  border: 1px solid;
+}
+.border-none {
+  border: none;
+}
+.border-top {
+  border-top: 1px solid;
+}
+.border-bottom {
+  border-bottom: 1px solid;
+}
+.border-left {
+  border-left: 1px solid;
+}
+
+/* Rounded --- */
+.rounded-none {
+  border-radius: var(--radius-none);
+}
+.rounded-4 {
+  border-radius: var(--radius-4);
+}
+.rounded-8 {
+  border-radius: var(--radius-8);
+}
+.rounded-16 {
+  border-radius: var(--radius-16);
+}
+.rounded-32 {
+  border-radius: var(--radius-32);
+}
+.rounded-full {
+  border-radius: var(--radius-full);
+}
+
+/* Shadows */
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Positioning */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
+}
+.bottom-0 {
+  bottom: 0;
+}
+
+/* z-index */
+.z-0 {
+  z-index: var(--z-0);
+}
+.z-10 {
+  z-index: var(--z-10);
+}
+.z-20 {
+  z-index: var(--z-20);
+}
+.z-50 {
+  z-index: var(--z-50);
+}
+.z-100 {
+  z-index: var(--z-100);
+}
+
+/* Transitions */
+.transition-fast {
+  transition: var(--transition-fast);
+}
+.transition-normal {
+  transition: var(--transition-normal);
+}
+
+/* -- others utils --*/
+.hidden {
+  display: none;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}
+
+.m-none {
+  display: block;
+}
+.d-none {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+  .m-none {
+    display: none;
+  }
+  .d-none {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-sm {
+    display: none;
+  }
+  .m-none {
+    display: none;
+  }
+  .d-none {
+    display: block;
+  }
+}

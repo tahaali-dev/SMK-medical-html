@@ -1,3 +1,10 @@
+/* Color Palette:
+1-Primary, secondary, success, warning, danger, and neutral colors. (done)
+Utilities:
+2-Background color classes. (done)
+3-Text color classes. (done)
+4-Border color classes. (done) */
+
 .text-primary-900 {
   color: var(--primary-900);
 }

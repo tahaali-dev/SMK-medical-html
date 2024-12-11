@@ -1,0 +1,392 @@
+/* 
+*Containers:
+1-Responsive container class. (done)
+*Grid System:
+2-Create a 12-column grid with responsive breakpoints.(done)
+3-Include utilities for spacing between columns.(done)
+*Flexbox Utilities:
+4-Flex container utilities (e.g., flex-row, flex-column, justify-content, align-items, gap).(done)
+
+ */
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* grid layout */
+/* Grid Row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+/* Grid Columns */
+.col {
+  flex: 1 0 0%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Default for Mobile (Extra Small) */
+.col-1 {
+  flex: 0 0 8.33%;
+  max-width: 8.33%;
+}
+.col-2 {
+  flex: 0 0 16.66%;
+  max-width: 16.66%;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+.col-5 {
+  flex: 0 0 41.66%;
+  max-width: 41.66%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-7 {
+  flex: 0 0 58.33%;
+  max-width: 58.33%;
+}
+.col-8 {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.col-10 {
+  flex: 0 0 83.33%;
+  max-width: 83.33%;
+}
+.col-11 {
+  flex: 0 0 91.66%;
+  max-width: 91.66%;
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* Medium Devices (≥768px) */
+@media (min-width: 768px) {
+  .col-md-1 {
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+  }
+  .col-md-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+  }
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-md-5 {
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+  }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-7 {
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+  }
+  .col-md-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-10 {
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+  }
+  .col-md-11 {
+    flex: 0 0 91.66%;
+    max-width: 91.66%;
+  }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Large Devices (≥992px) */
+@media (min-width: 992px) {
+  .col-lg-1 {
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+  }
+  .col-lg-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+  }
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-lg-5 {
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-lg-7 {
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+  }
+  .col-lg-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-lg-10 {
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+  }
+  .col-lg-11 {
+    flex: 0 0 91.66%;
+    max-width: 91.66%;
+  }
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Extra Large Devices (≥1200px) */
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+  }
+  .col-xl-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+  }
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-xl-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-xl-5 {
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+  }
+  .col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xl-7 {
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+  }
+  .col-xl-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-xl-10 {
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+  }
+  .col-xl-11 {
+    flex: 0 0 91.66%;
+    max-width: 91.66%;
+  }
+  .col-xl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Extra Extra Large Devices (≥1400px) */
+@media (min-width: 1400px) {
+  .col-xxl-1 {
+    flex: 0 0 8.33%;
+    max-width: 8.33%;
+  }
+  .col-xxl-2 {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+  }
+  .col-xxl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-xxl-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-xxl-5 {
+    flex: 0 0 41.66%;
+    max-width: 41.66%;
+  }
+  .col-xxl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xxl-7 {
+    flex: 0 0 58.33%;
+    max-width: 58.33%;
+  }
+  .col-xxl-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+  .col-xxl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-xxl-10 {
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+  }
+  .col-xxl-11 {
+    flex: 0 0 91.66%;
+    max-width: 91.66%;
+  }
+  .col-xxl-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Flex Container */
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Justify Content */
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items */
+.align-start {
+  align-items: flex-start;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: flex-end;
+}
+.align-baseline {
+  align-items: baseline;
+}
+.align-stretch {
+  align-items: stretch;
+}
+
+/* Gap */
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.gap-4 {
+  gap: 1.5rem;
+}
+.gap-5 {
+  gap: 3rem;
+}

@@ -1,3 +1,13 @@
+/* Font families (done).
+1-Heading styles (h1 to h6). (done)
+2-Paragraph styles. (done)
+
+* Text utilities:
+3-Font size, weight, and line-height utilities. (done)
+4-Text alignment (left, center, right, justify). (done)
+5-Text transformation (uppercase, lowercase, capitalize). (done)
+6-Letter spacing and word spacing. (done)*/
+
 /* Typography */
 h1 {
   font-size: var(--font-32);
@@ -91,4 +101,98 @@ h6 {
 }
 .text-bold {
   font-weight: bold;
+}
+
+/* Line height */
+.l-10 {
+  line-height: var(--font-10);
+}
+.l-12 {
+  line-height: var(--font-12);
+}
+.l-14 {
+  line-height: var(--font-14);
+}
+.l-16 {
+  line-height: var(--font-16);
+}
+.l-18 {
+  line-height: var(--font-18);
+}
+.l-20 {
+  line-height: var(--font-20);
+}
+.l-21 {
+  line-height: var(--font-21);
+}
+.l-22 {
+  line-height: var(--font-22);
+}
+.l-24 {
+  line-height: var(--font-24);
+}
+.l-30 {
+  line-height: var(--font-30);
+}
+.l-32 {
+  line-height: var(--font-32);
+}
+
+/* Text Alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* Text Transformation */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* Letter Spacing */
+.ls-0 {
+  letter-spacing: 0;
+}
+.ls-1 {
+  letter-spacing: 0.1em;
+}
+.ls-2 {
+  letter-spacing: 0.2em;
+}
+.ls-3 {
+  letter-spacing: 0.3em;
+}
+.ls-4 {
+  letter-spacing: 0.4em;
+}
+
+/* Word Spacing */
+.ws-0 {
+  word-spacing: 0;
+}
+.ws-1 {
+  word-spacing: 0.1em;
+}
+.ws-2 {
+  word-spacing: 0.2em;
+}
+.ws-3 {
+  word-spacing: 0.3em;
+}
+.ws-4 {
+  word-spacing: 0.4em;
 }
