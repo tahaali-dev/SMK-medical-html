@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../global.css" />
+    <title>SMK-Inputs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-16">Inputs</h2>
+
+      <div class="mt-12">
+        <form id="email-form" action="">
+          <div class="input-container col-4">
+            <label for="email">Email</label>
+
+            <!-- Input wrapper with icons -->
+            <div class="email-input-wrapper">
+              <img
+                src="../assets/icons/plus.svg"
+                alt="plus-icon"
+                class="pointer"
+              />
+              <input
+                type="text"
+                id="email"
+                class="email-input input-40"
+                placeholder="olivia@untitledui.com"
+              />
+              <img
+                src="../assets/icons/plus.svg"
+                alt="plus-icon"
+                class="pointer"
+              />
+            </div>
+
+            <!-- Hint text, which will be updated to show the error message -->
+            <p class="hint-text">This is a hint text to help user.</p>
+          </div>
+          <div class="input-container col-4">
+            <label for="email">Email</label>
+
+            <!-- Input wrapper with icons -->
+            <div class="email-input-wrapper disabled">
+              <img
+                src="../assets/icons/plus.svg"
+                alt="plus-icon"
+                class="pointer"
+              />
+              <input
+                type="text"
+                id="email "
+                class="email-input input-36"
+                placeholder="olivia@untitledui.com"
+                disabled
+              />
+              <img
+                src="../assets/icons/plus.svg"
+                alt="plus-icon"
+                class="pointer"
+              />
+            </div>
+
+            <!-- Hint text, which will be updated to show the error message -->
+            <p class="hint-text">This is a hint text to help user.</p>
+          </div>
+
+          <button type="submit" class="pbtn-40 pbtn-base-40">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const emailInput = document.getElementById("email");
+      const hintText = document.querySelector(".hint-text");
+      const inputContainer = document.querySelector(".email-input-wrapper");
+
+      // Event listener to handle input changes and remove error states
+      emailInput.addEventListener("input", function () {
+        if (hintText.classList.contains("error-text")) {
+          hintText.textContent = "This is a hint text to help user.";
+          hintText.classList.remove("error-text");
+          inputContainer.classList.remove("error");
+        }
+      });
+
+      document
+        .getElementById("email-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting normally
+
+          // Regular expression for email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!emailRegex.test(emailInput.value)) {
+            // Update hint text and add error class if email is invalid
+            hintText.textContent = "Please enter a valid email address.";
+            hintText.classList.add("error-text");
+            inputContainer.classList.add("error");
+          } else {
+            // If email is valid, show a success alert and reset hint text
+            hintText.textContent = "This is a hint text to help user.";
+            hintText.classList.remove("error-text");
+            inputContainer.classList.remove("error");
+
+            // Handle successful form submission (optional)
+            alert("Form submitted successfully!");
+          }
+        });
+    </script>
+  </body>
+</html>

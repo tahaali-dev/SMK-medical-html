@@ -4,6 +4,8 @@
 @import url("./styles/typography.css");
 @import url("./styles/layouts.css");
 @import url("./styles/utils.css");
+@import url("./styles/Components/Buttons.css");
+@import url("./styles/Components/Forms.css");
 
 /* Root Variables */
 :root {

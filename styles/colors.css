@@ -58,7 +58,7 @@ Utilities:
 }
 
 .text-danger {
-  color: var(--danger-text);
+  color: var(--danger-text) !important;
 }
 .text-success {
   color: var(--success-text);
@@ -125,60 +125,60 @@ Utilities:
 }
 /* Border color */
 .border-primary-900 {
-  border-color: var(--primary-900);
+  border-color: var(--primary-900) !important;
 }
 .border-primary-600 {
-  border-color: var(--primary-600);
+  border-color: var(--primary-600) !important ;
 }
 .border-primary-300 {
-  border-color: var(--primary-300);
+  border-color: var(--primary-300) !important;
 }
 .border-primary-100 {
-  border-color: var(--primary-100);
+  border-color: var(--primary-100) !important;
 }
 
 .border-blue-900 {
-  border-color: var(--blue-900);
+  border-color: var(--blue-900) !important;
 }
 .border-blue-600 {
-  border-color: var(--blue-600);
+  border-color: var(--blue-600) !important;
 }
 .border-blue-300 {
-  border-color: var(--blue-300);
+  border-color: var(--blue-300) !important;
 }
 .border-blue-100 {
-  border-color: var(--blue-100);
+  border-color: var(--blue-100) !important;
 }
 
 .border-purple-900 {
-  border-color: var(--purple-900);
+  border-color: var(--purple-900) !important;
 }
 .border-purple-600 {
-  border-color: var(--purple-600);
+  border-color: var(--purple-600) !important;
 }
 .border-purple-300 {
-  border-color: var(--purple-300);
+  border-color: var(--purple-300) !important;
 }
 .border-purple-100 {
-  border-color: var(--purple-100);
+  border-color: var(--purple-100) !important;
 }
 
 .border-warning-900 {
-  border-color: var(--warning-900);
+  border-color: var(--warning-900) !important;
 }
 .border-warning-600 {
-  border-color: var(--warning-600);
+  border-color: var(--warning-600) !important;
 }
 .border-warning-300 {
-  border-color: var(--warning-300);
+  border-color: var(--warning-300) !important;
 }
 .border-warning-100 {
-  border-color: var(--warning-100);
+  border-color: var(--warning-100) !important;
 }
 
 .border-danger {
-  border-color: var(--danger-border);
+  border-color: var(--danger-border) !important;
 }
 .border-success {
-  border-color: var(--success-border);
+  border-color: var(--success-border) !important;
 }

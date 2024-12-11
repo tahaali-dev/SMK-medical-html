@@ -1,2 +1,104 @@
-/* Variants (primary, secondary, danger, outline, etc.).
-Sizes (small, medium, large). */
+/* Shared styles */
+.pbtn-base-40 {
+  display: inline-flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* Primary Button */
+.pbtn-40 {
+  border: 1px solid var(--Primary-900, #89123e);
+  background: var(--Primary-600, #e31b53);
+  color: #fff;
+}
+
+/* Outline Button */
+.pbtn-outline-40 {
+  border: 1px solid var(--Primary-600, #e31b53);
+  background: var(--Greys-White, #fff);
+  color: var(--primary-600);
+}
+
+/* Disabled Button */
+.pbtn-dis-40 {
+  background: var(--neutral-icon, #d5d7da);
+  border: none;
+  color: var(--neutral-inactive);
+  line-height: 20px; /* Unique line-height for disabled button */
+}
+
+/* Shared styles */
+.pbtn-base-36 {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* Primary Button */
+.pbtn-36 {
+  border: 1px solid var(--Primary-900, #89123e);
+  background: var(--Primary-600, #e31b53);
+  color: #fff;
+}
+
+/* Outline Button */
+.pbtn-outline-36 {
+  border: 1px solid var(--Primary-600, #e31b53);
+  background: var(--Greys-White, #fff);
+  color: var(--primary-600);
+}
+
+/* Disabled Button */
+.pbtn-dis-36 {
+  background: var(--neutral-icon, #d5d7da);
+  border: none;
+  color: var(--neutral-inactive);
+  line-height: 20px; /* Unique line-height for disabled button */
+}
+
+/* Shared styles */
+.pbtn-base-32 {
+  display: inline-flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* Primary Button */
+.pbtn-32 {
+  border: 1px solid var(--Primary-900, #89123e);
+  background: var(--Primary-600, #e31b53);
+  color: #fff;
+}
+
+/* Outline Button */
+.pbtn-outline-32 {
+  border: 1px solid var(--Primary-600, #e31b53);
+  background: var(--Greys-White, #fff);
+  color: var(--primary-600);
+}
+
+/* Disabled Button */
+.pbtn-dis-32 {
+  background: var(--neutral-icon, #d5d7da);
+  border: none;
+  color: var(--neutral-inactive);
+  line-height: 20px; /* Unique line-height for disabled button */
+}

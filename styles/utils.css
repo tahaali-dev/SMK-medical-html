@@ -6,6 +6,10 @@ Width, height, and max/min utilities.(done)
 */
 
 /* Borders */
+.pointer {
+  cursor: pointer;
+}
+
 .border {
   border: 1px solid;
 }

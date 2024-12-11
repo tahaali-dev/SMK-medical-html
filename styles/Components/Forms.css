@@ -1,2 +1,117 @@
-/* Input fields, text areas, checkboxes, radio buttons, dropdowns.
-Focus and hover states. */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label {
+  color: var(--neutral-heading);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.07px;
+}
+
+.email-input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0px 14px;
+  margin: 6px 0px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.email-input-wrapper:focus-within {
+  border: 1px solid var(--Primary-300, #fea3b4);
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05),
+    0px 0px 0px 4px rgba(255, 228, 232, 0.3);
+}
+
+.email-input {
+  border: none;
+  flex-grow: 1;
+  outline: none;
+  background-color: transparent;
+  color: var(--neutral-heading);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+}
+
+/* for input h-40px */
+.input-40 {
+  padding: 7px 8px;
+}
+.input-36 {
+  padding: 5px 8px;
+}
+
+/* Placeholder styling */
+.email-input::placeholder {
+  color: var(--neutral-subhead);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+}
+
+/* Hint text */
+.hint-text {
+  color: var(--neutral-subhead);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.07px;
+}
+
+/* Error text */
+.error-text {
+  color: var(--danger-main, #d92d20);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.07px;
+}
+
+.email-input:focus,
+.email-input:valid {
+  background-color: transparent;
+}
+
+/* Input error state */
+.email-input-wrapper.error {
+  border: 1px solid var(--danger-main, #d92d20);
+}
+
+/* Show error message when input has an error */
+.email-input.error + .error-text {
+  display: block;
+}
+
+/* Add pointer cursor for icons */
+.pointer {
+  cursor: pointer;
+}
+
+/* Styling for disabled state */
+.email-input-wrapper.disabled {
+  border: 1px solid var(--neutral-border, #d0d0d0);
+  background-color: var(--neutral-icon, #f3f3f3);
+  cursor: not-allowed;
+}
+
+.email-input-wrapper.disabled .email-input {
+  color: var(--neutral-inactive, #a0a0a0);
+  background-color: var(--neutral-icon, #f3f3f3);
+}
+
+.email-input-wrapper.disabled .email-input::placeholder {
+  color: var(--neutral-placeholder, #b0b0b0);
+}
+
+/* Styling for disabled state on input */
+.email-input-wrapper.disabled .email-input[disabled] {
+  pointer-events: none;
+}
