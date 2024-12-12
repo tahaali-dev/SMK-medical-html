@@ -64,6 +64,14 @@ Utilities:
   color: var(--success-text);
 }
 
+.text-subhead {
+  color: var(--neutral-subhead);
+}
+
+.text-white {
+  color: #ffff;
+}
+
 /* Background color */
 .bg-primary-900 {
   background-color: var(--primary-900);
@@ -123,6 +131,10 @@ Utilities:
 .bg-success {
   background-color: var(--success-bg);
 }
+
+.bg-neutral {
+  background-color: var(--neutral-bg);
+}
 /* Border color */
 .border-primary-900 {
   border-color: var(--primary-900) !important;
@@ -181,4 +193,14 @@ Utilities:
 }
 .border-success {
   border-color: var(--success-border) !important;
+}
+
+.border-n-inactive {
+  border-color: var(--neutral-inactive) !important;
+}
+.border-n-icon {
+  border-color: var(--neutral-icon) !important;
+}
+.border-n-divider {
+  border-color: var(--neutral-divider) !important;
 }

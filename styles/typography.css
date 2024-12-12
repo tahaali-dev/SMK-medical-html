@@ -52,6 +52,10 @@ h6 {
   font-size: var(--font-14);
   line-height: 22px;
 }
+.b3-m {
+  font-size: var(--font-14);
+  line-height: 14px;
+}
 .b4 {
   font-size: var(--font-12);
   line-height: 18px;

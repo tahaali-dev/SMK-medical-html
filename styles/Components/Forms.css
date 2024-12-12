@@ -97,14 +97,14 @@ label {
 
 /* Styling for disabled state */
 .email-input-wrapper.disabled {
-  border: 1px solid var(--neutral-border, #d0d0d0);
-  background-color: var(--neutral-icon, #f3f3f3);
+  border: 1px solid var(--neutral-icon);
+  background-color: var(--neutral-divider);
   cursor: not-allowed;
 }
 
 .email-input-wrapper.disabled .email-input {
-  color: var(--neutral-inactive, #a0a0a0);
-  background-color: var(--neutral-icon, #f3f3f3);
+  color: var(--neutral-inactive);
+  background-color: var(--neutral-divider);
 }
 
 .email-input-wrapper.disabled .email-input::placeholder {

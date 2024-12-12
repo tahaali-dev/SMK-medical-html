@@ -115,6 +115,9 @@ Width, height, and max/min utilities.(done)
 .inline-block {
   display: inline-block;
 }
+.inline-flex {
+  display: inline-flex;
+}
 .inline {
   display: inline;
 }
@@ -154,4 +157,9 @@ Width, height, and max/min utilities.(done)
   .d-none {
     display: block;
   }
+}
+
+/* extras */
+.br-1234 {
+  border-radius: 1234px;
 }
