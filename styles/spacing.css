@@ -334,6 +334,10 @@
   padding-top: var(--space-12);
   padding-bottom: var(--space-12);
 }
+.py-14 {
+  padding-top: var(--space-14);
+  padding-bottom: var(--space-14);
+}
 .py-16 {
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
